@@ -10,7 +10,15 @@ public class Zoo : MonoBehaviour
         tom.name = "Åè";
         tom.sound = "³Ä¿Ë!!!!!!!!!!!!!";
 
+        Animal jerry = new Animal();
+        jerry.name = "Á¦¸®";
+        jerry.sound = "Âï©!";
+
+        jerry = tom;
+        jerry.name = "¹ÌÅ°";
+
         tom.PlayeSound();
+        jerry.PlayeSound();
     }
 
 }
